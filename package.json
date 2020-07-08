@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js",
+    "test": "mocha server.test.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,13 @@
   },
   "homepage": "https://github.com/codestates/Mango-server#readme",
   "devDependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
     "eslint": "^7.1.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.8"
+    "lint-staged": "^10.2.8",
+    "mocha": "^7.2.0",
+    "supertest": "^4.0.2"
   },
   "husky": {
     "hooks": {
@@ -31,5 +36,17 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "dependencies": {
+    "async-redis": "^1.1.7",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.17",
+    "mongoose-findorcreate": "^3.0.0",
+    "multer": "^1.4.2"
   }
 }

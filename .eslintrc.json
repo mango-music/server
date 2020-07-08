@@ -2,19 +2,21 @@
     "env": {
         "commonjs": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "mocha": true
     },
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
-    "extends": "eslint:recommended",
+    "extends": ["eslint:recommended"],
     "parserOptions": {
         "ecmaVersion": 11
     },
     "rules": {
       "no-console": 0,
       "no-unused-vars": 0,
-      "indent": ["error", 2]
+      "indent": ["error", 2],
+      "semi": ["error", "always"]
     }
 }
